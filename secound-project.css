@@ -13,7 +13,7 @@ body {
   color: white;
   font-size: 16px;
   position: absolute;
-  right: 40px;
+  right: 2%;
   word-spacing: 3px;
   font-family: "Roboto", sans-serif;
 }
@@ -47,12 +47,17 @@ body {
   color: rgb(23, 13, 43);
   line-height: 8px;
 }
+
+.revalation1 h1{
+  font-size: 1.5em;
+}
 .revalation1 span{
   font-size: 1.5em;
 }
 .revalation1 p {
   color: rgb(82, 52, 109);
   font-family: 'Arvo', serif;
+  
 }
 .revalution2 {
   margin: 2% 2% 5% 2%;
@@ -150,6 +155,18 @@ body {
 /* //////////////////////////
 ///////////
 icon section///////////// */
+.scrol{
+  margin: 0%;
+  padding:5% 0% 0% 0%;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+  font-size: 4em;
+  box-sizing: border-box;
+}
+.icon2{
+text-align: right;
+}
 .icon {
 
   display: grid;
@@ -160,14 +177,7 @@ icon section///////////// */
   color: rgb(72, 48, 92);
   font-family: "Lora", serif;
 }
-.scrol{
-  padding: 5% 0% 0% 0%;
-  display: grid;
-  grid-template-columns: 13% 10%;
-  justify-content: space-between;
-  font-size: 4em;
-  box-sizing: border-box;
-}
+
 
 .icon i {
   font-size: 4em;
@@ -374,6 +384,11 @@ a{
 //////////////////////////
 media//////////////
 ////////////// */
+@media screen and (max-width:1140px){
+.revalation{
+  grid-template-columns: 34% 64%;
+}
+}
 @media screen and (max-width:740px) {
 
   .revalation {
@@ -402,6 +417,17 @@ media//////////////
     grid-template-rows:50% 50%;
     text-align:center;
   }
+ 
+  .revalution2{
+    padding: 0%;
+    margin: 0%;
+  }
+  .revalution2 li{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+  }
  .fecilis{
     grid-template-columns: 47% 47%;
     grid-template-rows:50% 50%;
@@ -426,6 +452,9 @@ media//////////////
   }
 }
 @media screen and (max-width:360px){
+  .head{
+    font-size: 12px;
+  }
   .icon {
      grid-template-columns: 99%;
      grid-template-rows:auto;
